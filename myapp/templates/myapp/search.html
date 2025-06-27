@@ -1,0 +1,79 @@
+<!-- myapp/templates/myapp/search.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            width: 300px;
+        }
+
+        input[type="submit"] {
+            padding: 8px 12px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        li {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Search Any Query</h1>
+    <form method="get" action="/results"> <!-- Changed form action to /results -->
+        <label for="search_query">Search:</label>
+        <input type="text" name="search_query" id="search_query" value="{{ query }}">
+        <input type="submit" value="Search">
+    </form>
+    <h2>Results:</h2>
+    <ul>
+        {% for item in results %}
+            <li>{{ item.name }} - {{ item.description }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

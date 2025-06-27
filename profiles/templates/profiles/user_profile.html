@@ -1,0 +1,67 @@
+<!-- profiles/templates/profiles/user_profile.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <!-- Include Bootstrap CSS (you may need to download and host it locally or use a CDN) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: bisque;
+            padding-top: 20px;
+        }
+        .container {
+            background-color: #edf3db;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #007bff;
+        }
+        label {
+            font-weight: bold;
+            color: #343a40;
+            width: 150px; /* Set a fixed width for the labels */
+            display: inline-block; /* Ensure labels are treated as block elements */
+        }
+        .btn-primary {
+            background-color:green;
+            border-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">User Profile</h1>
+        <form method="post" action="{% url 'view_profile' %}" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="{{ form.name.id_for_label }}">Name:</label>
+                {{ form.name }}
+            </div>
+            <div class="form-group">
+                <label for="{{ form.bio.id_for_label }}">Bio:</label>
+                {{ form.bio }}
+            </div>
+            <div class="form-group">
+                <label for="{{ form.age.id_for_label }}">Age:</label>
+                {{ form.age }}
+            </div>
+            <div class="form-group">
+                <label for="{{ form.location.id_for_label }}">Location:</label>
+                {{ form.location }}
+            </div>
+            <button type="submit" class="btn btn-primary">Save Profile<br>to View your Info</button>
+        </form>
+    </div>
+
+    <!-- Include Bootstrap JS (optional, if you need Bootstrap features) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js" integrity="sha384-ggOyR0iXCbMQv3Xipma4Kc86Lr/Z9KJrUu9E9z9xP0xnbYq1xV/FLQKFDZJoInnJ" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

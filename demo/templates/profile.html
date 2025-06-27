@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- templates/options_page.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Options Page</title>
+    <style>
+           body {
+            font-family: Arial, sans-serif;
+
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+               background-image: url('static/img1.png');
+                background-size: cover;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: green;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column; /* Display options vertically */
+            align-items: center; /* Center horizontally */
+            margin-top: 20px;
+        }
+
+        .option {
+            width: 150px;
+            padding: 10px;
+            margin-bottom: 10px; /* Add space between options */
+            background-color: green;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .option:hover {
+            background-color: #0056b3;
+        }
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Profile Page</h1>
+        <h1>Select an Option</h1>
+        <div class="options">
+            <a href="{% url 'user_profile' %}" class="option">Add your Information</a>
+            <a href="{% url 'view_profile' %}" class="option">See your Information</a>
+        </div>
+        <p><button type="button"onclick="history.back()">Go Back</button></p>
+    </div>
+</body>
+</html>
+
+</body>
+</html>

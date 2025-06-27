@@ -1,0 +1,118 @@
+<!-- myapp/templates/myapp/landing.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+
+        body{
+            background-color: #9febef;
+        }
+
+        nav {
+            background-color: #64b5ff;
+            padding: 15px 0;
+            text-align: left;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            background-color: red;
+        }
+
+       h1 {
+            text-align: center;
+            margin-top: 100px;
+            color: black;
+            border-bottom: 6px solid green; /* Adding a border to the bottom of h1 */
+            padding-bottom: 40px; /* Adding some padding for spacing */
+        }
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: green;
+            text-align: right;
+            padding: 10px 0;
+        }
+
+
+
+        .bottom-nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color:bisque;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Add additional styles for your content */
+
+        /* Example content style */
+        p {
+            color: white;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="{% url 'register' %}">Register</a>
+        <a href="{% url 'login' %}">Login</a>
+        <a href="{% url 'login' %}">Home</a>
+       <a class="nav-link btn btn-primary btn-sm ml-lg-3" href="http://127.0.0.1:8000/admin_1/login/?next=/admin_1">Admin</a>
+    </nav>
+
+    <div class="container">
+        <h1>Welcome to<br>Online Crime Reporting System</h1>
+    </div>
+
+
+
+        <!-- Add your content here -->
+
+
+
+
+
+    <!-- Top Navigation Bar -->
+
+
+
+    <!-- Bottom Navigation Bar -->
+    <nav class="bottom-nav">
+        <a href="https://www.uap-bd.edu/">University of Asia Pacific</a>
+        <a href="{% url 'services' %}">Services</a>
+        <a href="{% url 'aboutus' %}">About Our Project</a>
+        <a href="{% url 'instructor' %}">Instructor</a>
+        <a href="{% url 'team' %}">About us</a>
+    </nav>
+
+
+
+
+

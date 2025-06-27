@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        th,td{
+            border: 1px black solid;
+        }
+        body{
+            background-color:aliceblue;
+        }
+        h1{
+            border: 2px solid black;
+  outline: #04AA6D solid 10px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+        }
+        h3{
+             border: 2px solid black;
+  outline: #04AA6D solid 10px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+        }
+        #customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+    </style>
+</head>
+<body>
+<h1>crime Records According to Thana of Dhaka</h1>
+
+{% if stu %}
+    <h3>Data Available</h3><br><br><br>
+<table id="customers">
+    <tr>
+        <th>ID</th>
+        <th>Thana name</th>
+        <th>Area thana</th>
+        <th>Population thana</th>
+        <th>Total street crime</th>
+        <th>Crime rate per thousand</th>
+        <th>Density of crime per square km</th>
+
+    </tr>
+    {% for st in stu %}
+    <tr>
+        <td>{{st.id}}</td>
+        <td>{{st.thana_name}}</td>
+        <td>{{st.area_thana}}</td>
+        <td>{{st.population_thana}}</td>
+        <td>{{st.total_street_crime}}</td>
+        <td>{{st.crime_rate_per_thousand}}</td>
+        <td>{{st.density_of_crime_per_sqr_km}}</td>
+    </tr>
+        {{st.id}}
+        {{st.thana_name}}
+        {{st.area_thana}}
+        {{st.population_thana}}
+        {{st.total_street_crime}}
+        {{st.crime_rate_per_thousand}}
+        {{st.density_of_crime_per_sqr_km}}
+    {% endfor %}
+</table>
+{% else %}
+    <h1>No Data</h1>
+{% endif %}
+
+</body>
+</html>

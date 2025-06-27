@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        button{
+        background-color: black;
+        border: none;
+        color: white;
+        padding: 8px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: bisque;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        .profile-container {
+            background-color: #edf3db;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: left; /* Set text alignment to left within the container */
+            max-width: 400px; /* Set a maximum width for better readability */
+            width: 100%;
+        }
+
+        h1 {
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        strong {
+            color: #343a40;
+        }
+
+        p {
+            margin: 0;
+            margin-bottom: 10px; /* Add margin between paragraphs for spacing */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <h1>User Profile</h1>
+        <p><strong>Name:</strong> {{ user_profile.name }}</p>
+        <p><strong>Bio:</strong> {{ user_profile.bio }}</p>
+        <p><strong>Age:</strong> {{ user_profile.age }}</p>
+        <p><strong>Location:</strong> {{ user_profile.location }}</p>
+
+    </div>
+
+    <p><button type="button"onclick="history.back()">Go Back</button></p>
+</body>
+</html>
