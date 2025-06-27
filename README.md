@@ -25,10 +25,23 @@ It aims to digitize the crime reporting process, reduce paperwork, and make just
 ---
 ## Screenshots
 
->
+### Home Page
+![Home Page](OCRS-screenshots/1.PNG)
+
+### About Page
+![About Page](OCRS-screenshots/2.PNG)
+
+### Service Page
+![Service Page](OCRS-screenshots/3.PNG)
+
+### Feature Page
+![Feature Page](OCRS-screenshots/4.PNG)
+
+### Contact
+![Contact](OCRS-screenshots/5.PNG)
 
 ---
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer        | Technology                   |
 |--------------|-------------------------------|
