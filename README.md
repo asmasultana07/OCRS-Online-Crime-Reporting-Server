@@ -22,22 +22,22 @@ It aims to digitize the crime reporting process, reduce paperwork, and make just
 - 🔐 Sign up - Role-based access: Public, Admin, Officer.
 - 📊 Crime Record - Complaint statistics and reporting.
 
----
+
 ## Screenshots
 
-### Home Page
+#### Home Page
 ![Home Page](OCRS-screenshot/1.PNG)
 
-### About Page
+#### About Page
 ![About Page](OCRS-screenshot/2.PNG)
 
-### Service Page
+#### Service Page
 ![Service Page](OCRS-screenshot/3.PNG)
 
-### Feature Page
+#### Feature Page
 ![Feature Page](OCRS-screenshot/4.PNG)
 
-### Contact
+#### Contact
 ![Contact](OCRS-screenshot/5.PNG)
 
 ---
