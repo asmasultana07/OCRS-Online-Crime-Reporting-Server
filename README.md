@@ -12,12 +12,12 @@
 
 It aims to digitize the crime reporting process, reduce paperwork, and make justice more accessible and transparent.
 
----
+
 ## Features
 
 - 📝 F.I.R - Online crime/incident report submission.
 - 🔍 Information - Case tracking by complaint ID.
-- 👮 Update - Admin dashboard for managing complaints.
+- 👮  Update - Admin dashboard for managing complaints.
 - 📬 Emergency Contact - Secure communication with police officers.
 - 🔐 Sign up - Role-based access: Public, Admin, Officer.
 - 📊 Crime Record - Complaint statistics and reporting.
@@ -26,19 +26,19 @@ It aims to digitize the crime reporting process, reduce paperwork, and make just
 ## Screenshots
 
 ### Home Page
-![Home Page](OCRS-screenshots/1.PNG)
+![Home Page](OCRS-screenshot/1.PNG)
 
 ### About Page
-![About Page](OCRS-screenshots/2.PNG)
+![About Page](OCRS-screenshot/2.PNG)
 
 ### Service Page
-![Service Page](OCRS-screenshots/3.PNG)
+![Service Page](OCRS-screenshot/3.PNG)
 
 ### Feature Page
-![Feature Page](OCRS-screenshots/4.PNG)
+![Feature Page](OCRS-screenshot/4.PNG)
 
 ### Contact
-![Contact](OCRS-screenshots/5.PNG)
+![Contact](OCRS-screenshot/5.PNG)
 
 ---
 ## Tech Stack
